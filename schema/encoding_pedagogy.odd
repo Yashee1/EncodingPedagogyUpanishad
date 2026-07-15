@@ -1,1 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Encoding Pedagogy — ODD Schema (Worked Example)</title>
+        <author>Yashee Singh</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Draft schema for the DH2026 pilot project "Between Category and Code:
+          A Reflexive Pilot Study of Encoding Pedagogical Structures in the Upanishads."</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Customizations derived from the ontology draft and the
+          saturation-check Update Report. Base modules follow the project's own orientation note.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec xmlns="http://www.tei-c.org/ns/1.0" ident="encodingPedagogy" start="TEI" prefix="tei_">
+        
+        <moduleRef key="core"/>
+        <moduleRef key="header"/>
+        <moduleRef key="textstructure"/>
+        <moduleRef key="analysis"/>
+        <moduleRef key="drama"/>
+        <moduleRef key="verse"/>
+        <moduleRef key="namesdates"/>
+        <moduleRef key="corpus"/>
+        
+        <elementSpec ident="div" mode="change" module="textstructure">
+          <attList>
+            <attDef ident="type" mode="change">
+              <valList type="closed">
+                <valItem ident="khanda">
+                  <desc>Section division used in the Kena Upanishad.</desc>
+                </valItem>
+                <valItem ident="valli">
+                  <desc>Section division used in the Katha Upanishad.</desc>
+                </valItem>
+                <valItem ident="text">
+                  <desc>Top-level division for one complete Upanishad.</desc>
+                </valItem>
+                <valItem ident="glossary">
+                  <desc>Back-matter division holding the pedagogical-category glossary.</desc>
+                </valItem>
+                <valItem ident="footnotes">
+                  <desc>Back-matter division holding translation flags and tagging notes.</desc>
+                </valItem>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <classSpec ident="att.global.analytic" mode="change" type="atts">
+          <attList>
+            <attDef ident="ana" mode="change">
+              <desc>One or more whitespace-separated pointers to interp elements
+                declared in the back-matter interpGrp. Project convention: the
+                first pointer is the primary pedagogical-category tag; subsequent
+                pointers are secondary tags, matching the Primary/Secondary
+                columns of the Phase 1B master table.</desc>
+            </attDef>
+          </attList>
+        </classSpec>
+        
+        <elementSpec ident="interp" mode="change" module="analysis">
+          <attList>
+            <attDef ident="n" mode="change" usage="req">
+              <desc>The single-letter category code shown as the reading-view
+                badge. Codes outside the final seven are still declared here so
+                excluded categories remain part of the addressable record, per
+                the Appendix note in the Update Report.</desc>
+              <valList type="closed">
+                <valItem ident="A"><desc>Aporia | Neti Neti</desc></valItem>
+                <valItem ident="B"><desc>Epistemic Humility | Guru as Saha-adhyayi (excluded)</desc></valItem>
+                <valItem ident="C"><desc>Assessment | Pariksa (excluded)</desc></valItem>
+                <valItem ident="D"><desc>Anaphora | Avrtti</desc></valItem>
+                <valItem ident="E"><desc>Anagnorisis | Pratyabhijna(excluded)</desc></valItem>
+                <valItem ident="F"><desc>Readiness | Adhikara</desc></valItem>
+                <valItem ident="G"><desc>Analogy | Drstanta</desc></valItem>
+                <valItem ident="H"><desc>Formative Labelling (excluded)</desc></valItem>
+                <valItem ident="I"><desc>Inverted Scaffolding | Guru's Rin (excluded)</desc></valItem>
+                <valItem ident="J"><desc>Imperative Closure | Ajna following Updesa (excluded)</desc></valItem>
+                <valItem ident="K"><desc>Outcome Statement | Phalasruti</desc></valItem>
+                <valItem ident="L"><desc>Negative Reference Group</desc></valItem>
+                <valItem ident="M"><desc>Spatial Metaphor for Interiority | Guha as fixed locus of Atman</desc></valItem>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        <elementSpec ident="note" mode="change" module="core">
+          <attList>
+            <attDef ident="type" mode="change">
+              <valList type="closed">
+                <valItem ident="translationFlag">
+                  <desc>A concern about Olivelle's specific English word choice —
+                    not a pedagogical category, and not a record of a tagging
+                    decision.</desc>
+                </valItem>
+                <valItem ident="taggingNote">
+                  <desc>A record of a category-testing, boundary-testing, or
+                    recoding decision made during ontology development or the
+                    saturation check — not a comment on translation.</desc>
+                </valItem>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+      </schemaSpec>
+    </body>
+  </text>
+</TEI>
 
