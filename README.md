@@ -11,14 +11,14 @@ what does it drop?
 Working from Patrick Olivelle's English translation of two Upanishads, this
 project built a pedagogical ontology from close reading (thirteen categories,
 seven carried forward for this pilot), then encoded it as a custom TEI
-schema (ODD) — treating every schema error encountered along the way as
+schema (ODD) treating every schema error encountered along the way as
 data about where the initial reading had been imprecise, not just a bug to
 fix quietly.
 
 ## Status
 Work in progress. This is a pilot: seven passages, not a complete corpus.
 Categories marked "excluded" in the schema are retained in the record but
-not presented on the poster — see `/docs` for the full rationale.
+not presented on the poster see `/docs` for the full rationale.
 
 ## Repository structure
 /poster.pdf   DH2026 conference poster
@@ -77,7 +77,7 @@ extend to the quoted translation excerpts described above.
 See `CITATION.cff`, or cite as:
 
 > Frank Fischer, Yashee Singh(2026). *Encoding Pedagogy: Interpreting the Upanishads through Small-Scale Semantic Annotation* DH2026.
-> https://github.com/[your-username]/[repo-name]
+> https://github.com/Yashee1/EncodingPedagogyUpanishad
 
 ## Acknowledgments
 Supervised by Prof. Dr. Frank Fischer, Chair, Digital Humanities, FU Berlin.
