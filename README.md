@@ -74,8 +74,6 @@ released under the MIT License (see `LICENSE`). This license does **not**
 extend to the quoted translation excerpts described above.
 
 ## Citation
-See `CITATION.cff`, or cite as:
-
 > Frank Fischer, Yashee Singh(2026). *Encoding Pedagogy: Interpreting the Upanishads through Small-Scale Semantic Annotation* DH2026.
 > https://github.com/Yashee1/EncodingPedagogyUpanishad
 
