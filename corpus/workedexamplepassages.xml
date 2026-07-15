@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="out/encoding_pedagogy_worked_example.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="reading_view_author.css" title="Reading view"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Encoding Pedagogy — Worked Example Passages</title>
+        <author>Yashee</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Draft encoding for the DH2026 pilot project "Between Category and Code."
+        Not for distribution outside supervisor review.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Patrick Olivelle (trans.), <title>The Early Upanisads</title>.
+        Kena Upanishad and Katha Upanishad.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="student"><persName>Student (unnamed)</persName></person>
+          <person xml:id="teacher"><persName>Teacher (unnamed)</persName></person>
+          <person xml:id="naciketas"><persName>Naciketas</persName></person>
+          <person xml:id="death"><persName>Death (Yama)</persName></person>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+      <div type="text" n="Kena Upanishad" xml:id="kena">
+
+        <div type="khanda" n="1">
+          <lg type="verse" n="1" ana="#cat-A">
+            <l>By whom impelled, by whom compelled, does the mind soar forth?</l>
+            <l>By whom enjoined does the breath, march on as the first?</l>
+            <l>By whom is this speech impelled, with which people speak?</l>
+            <l>And who is the god that joins the sight and hearing?</l>
+          </lg>
+          <lg type="verse" n="2" ana="#cat-K">
+            <l>That which is the hearing behind hearing, the thinking behind thinking, the speech
+            behind speech, the sight behind sight—</l>
+            <l>It is also the breathing behind breathing—</l>
+            <l>Freed completely from these, the wise become immortal, when they depart from this
+            world.</l>
+          </lg>
+        </div>
+
+        <div type="khanda" n="4">
+          <lg type="verse" n="4">
+            <l>Here is its rule of substitution<ptr type="note" target="#fn1"/>: the cry "Ah!" when
+            lightning has flashed, the cry "Ah!" when it made them blink—such it is with respect
+            to the divine sphere.</l>
+          </lg>
+          <lg type="verse" n="5" ana="#cat-G">
+            <l>And with respect to the body (atman)—when something here comes to the mind somehow
+            and through it the imagination suddenly recollects something.</l>
+          </lg>
+          <lg type="verse" n="6" ana="#cat-K">
+            <l>Now, its name is Tadvana, and it should be venerated as Tadvana. When someone knows
+            it as such, all beings long for him.</l>
+          </lg>
+          <sp who="#student">
+            <speaker>Student</speaker>
+            <lg type="verse" n="7" ana="#cat-E">
+              <l>"Sir, teach me the hidden connection (upanisad)<ptr type="note" target="#fn2"/>."</l>
+            </lg>
+          </sp>
+          <sp who="#teacher">
+            <speaker>Teacher</speaker>
+            <p>"You have been taught the hidden connection (upanisad)—indeed, we have taught you
+            the hidden connection (upanisad) relating to brahman itself.</p>
+          </sp>
+        </div>
+
+      </div>
+
+      <div type="text" n="Katha Upanishad" xml:id="katha">
+
+        <div type="valli" n="1">
+          <sp who="#naciketas">
+            <speaker>Naciketas</speaker>
+            <lg type="verse" n="12" ana="#cat-H">
+              <l>In the world of heaven there is no fear;</l>
+              <l>there one has no fear of old age or you.</l>
+              <l>Transcending both these—both hunger and thirst,</l>
+              <l>beyond all sorrows, one rejoices in heaven.</l>
+            </lg>
+            <lg type="verse" n="13" ana="#cat-H">
+              <l>You, O Death, are studying,</l>
+              <l>the fire-altar that leads to heaven;</l>
+              <l>Explain that to me, a man who has faith;</l>
+              <l>People who are in heaven enjoy the immortal state—</l>
+              <l>It is this I choose with my second wish.</l>
+            </lg>
+          </sp>
+          <sp who="#death">
+            <speaker>Death</speaker>
+            <lg type="verse" n="14" ana="#cat-M">
+              <l>I shall explain to you—</l>
+              <l>and heed this teaching of mine,</l>
+              <l>O Naciketas, you who understand—</l>
+              <l>the fire-altar that leads to heaven,</l>
+              <l>to the attainment of an endless world,</l>
+              <l>and is its very foundation.</l>
+              <l>Know that it lies hidden,</l>
+              <l>In the cave of the heart.</l>
+            </lg>
+          </sp>
+        </div>
+
+        <div type="valli" n="2">
+          <lg type="verse" n="5" ana="#cat-L">
+            <l>Wallowing in ignorance, but calling themselves wise,</l>
+            <l>Thinking themselves learned, the fools go around,</l>
+            <l>staggering about like a group of blind men,</l>
+            <l>led by a man who is himself blind.</l>
+          </lg>
+          <lg type="verse" n="11" ana="#cat-H">
+            <l>Satisfying desires is the foundation of the world;</l>
+            <l>Uninterrupted rites bring ultimate security;</l>
+            <l>Great and widespread praise is the foundation—</l>
+            <l>these you have seen, wise Naciketas,</l>
+            <l>and having seen, firmly rejected.</l>
+          </lg>
+          <lg type="verse" n="12" ana="#cat-M">
+            <l>The primeval one who is hard to perceive,</l>
+            <l>wrapped in mystery, hidden in the cave,</l>
+            <l>residing within the impenetrable depth—</l>
+            <l>Regarding him as god, an insight</l>
+            <l>gained by inner contemplation,</l>
+            <l>both sorrow and joy the wise abandon.</l>
+          </lg>
+          <lg type="verse" n="13" ana="#cat-G">
+            <l>When a mortal has heard it, understood it;</l>
+            <l>when he has drawn it out,</l>
+            <l>and grasped this subtle point of doctrine;</l>
+            <l>He rejoices, for he has found</l>
+            <l>something in which he could rejoice.</l>
+            <l>To him I consider my house</l>
+            <l>to be open, Naciketas.</l>
+          </lg>
+          <sp who="#naciketas" cert="low">
+            <speaker>Naciketas <hi rend="superscript">?</hi></speaker>
+            <lg type="verse" n="14" ana="#cat-F">
+              <l>Tell me what you see as—</l>
+              <l>Different from the right doctrine and from the wrong;</l>
+              <l>Different from what's done here and what's left undone;</l>
+              <l>Different from what has been and what's yet to be.</l>
+            </lg>
+          </sp>
+        </div>
+
+        <div type="valli" n="6">
+          <!--
+            No @ana on this passage by design: initially tested against
+            Category A, it held cleanly under G's decision rule instead, but
+            per the project's decision not to formally name a sub-category for
+            this ladder-like pattern, it carries a tagging-history footnote
+            only - no category badge is rendered on the reading view.
+          -->
+          <lg type="verse" n="7">
+            <l>Higher than the senses is the mind;</l>
+            <l>Higher than the mind is the essence;</l>
+            <l>Higher than the essence is the immense self;</l>
+            <l>Higher than the immense is the unmanifest.<ptr type="note" target="#fn3"/></l>
+          </lg>
+          <lg type="verse" n="8">
+            <l>Higher than the unmanifest is the person,</l>
+            <l>pervading all and without any marks.</l>
+            <l>Knowing him, a man is freed,</l>
+            <l>and attains immortality.<ptr type="note" target="#fn3"/></l>
+          </lg>
+          <lg type="verse" n="9">
+            <l>His appearance is beyond the range of sight;</l>
+            <l>no one can see him with his sight;</l>
+            <l>With the heart, with insight, with thought,</l>
+            <l>has he been contemplated—</l>
+            <l>Those who know this become immortal.<ptr type="note" target="#fn3"/></l>
+          </lg>
+        </div>
+
+      </div>
+
+    </body>
+
+    <back>
+
+      <div type="glossary">
+        <interpGrp type="pedagogicalCategory">
+          
+          <interp xml:id="cat-A" n="A">
+            <desc><term>Aporia</term> | <term xml:lang="sa">Neti Neti</term> —
+              A passage in which ordinary cognitive effort (seeing, thinking,
+              striving) is shown to defeat itself when directed at the object of
+              teaching. It does not resolve the block; it uses the block as the
+              lesson.</desc>
+          </interp>
+          
+          <interp xml:id="cat-E" n="E">
+            <desc><term>Anagnorisis</term> | <term xml:lang="sa">Pratyabhijna</term> —
+              A passage where the resolution of the teaching does not come
+              directly from the named teacher to the named student in the expected
+              sequence. It arrives via an unexpected figure, or it is revealed
+              retroactively that the teaching had already been received.</desc>
+          </interp>
+          
+          <interp xml:id="cat-F" n="F">
+            <desc><term>Readiness</term> | <term xml:lang="sa">Adhikara</term> —
+              Moments where the student's spontaneous action (moral reasoning,
+              persistence, or refusal of an offer) constitutes the qualifying
+              evidence for receiving the teaching, occurring before and
+              independently of the teacher formally naming or testing that
+              qualification.</desc>
+          </interp>
+          
+          <interp xml:id="cat-G" n="G">
+            <desc><term>Analogy</term> | <term xml:lang="sa">Drstanta</term> —
+              A passage that substitutes a sensory, everyday image for an
+              abstract or ineffable concept.</desc>
+          </interp>
+          
+          <interp xml:id="cat-H" n="H">
+            <desc><term>Formative Labelling</term> —
+              A moment where the teacher explicitly and formally names the
+              student's category or status (e.g., "one yearning for knowledge"),
+              rather than simply praising an action. This confers identity, with
+              consequences for what follows.</desc>
+          </interp>
+          
+          <interp xml:id="cat-K" n="K">
+            <desc><term>Outcome Statement</term> | <term xml:lang="sa">Phalasruti</term> —
+              A passage that states an explicit outcome or stake (what happens to
+              one who knows versus one who does not) rather than ending on an
+              open or reflective note. Occurs at both the close and, occasionally,
+              the opening of a teaching unit.</desc>
+          </interp>
+          
+          <interp xml:id="cat-L" n="L">
+            <desc><term>Negative Reference Group</term> —
+              A passage in which the student, or the category of the wise, is
+              defined in explicit contrast to a named or implied group acting or
+              believing incorrectly, rather than through positive description
+              alone.</desc>
+          </interp>
+          
+          <interp xml:id="cat-M" n="M">
+            <desc><term>Spatial Metaphor for Interiority</term> | <term xml:lang="sa">Guha as fixed locus of Atman</term> —
+              An interior cavity, usually the heart, recurring verbatim or
+              near-verbatim across multiple teaching units as a fixed location,
+              not a one-time comparison.</desc>
+          </interp>
+          
+        </interpGrp>
+      </div>
+
+      <div type="footnotes">
+
+        <note xml:id="fn1" n="1" type="translationFlag">
+          <p>The phrase "rule of substitution" carries a logical or procedural
+          register in English that may not be present in the underlying Sanskrit.
+          Olivelle's word choice implies a formal principle of equivalence, but
+          it is unclear whether the source text frames this relationship as a
+          technical "rule" at all, or whether "substitution" is Olivelle's
+          interpretive gloss on a more open-ended correspondence between the
+          everyday exclamation ("Ah!") and the divine sphere. This is flagged as
+          an open question for review rather than resolved here, since verifying
+          it would require consulting the Sanskrit directly rather than working
+          from the English translation alone.</p>
+        </note>
+
+        <note xml:id="fn2" n="2" type="translationFlag">
+          <p>Olivelle renders the proper noun <foreign xml:lang="sa">upanisad</foreign>
+          as "hidden connection" throughout this passage rather than leaving the
+          term untranslated or using an alternative English rendering such as
+          "secret teaching," both of which appear in other published
+          translations. This choice is significant beyond ordinary word choice:
+          because the term names the genre itself, Olivelle's translation
+          functions as an implicit interpretive claim about what an upanisad
+          fundamentally is. Every occurrence of the phrase in this passage
+          inherits that interpretive framing, which is worth naming explicitly
+          rather than treating as a neutral label.</p>
+        </note>
+
+        <note xml:id="fn3" n="3" type="taggingNote">
+          <p>This passage was initially tested against Category A (Aporia /
+          Self-Cancelling Paradox), since its structure of "higher than X is Y"
+          statements bears surface resemblance to the regress patterns typical
+          of A. On closer testing, the passage held cleanly under Category G's
+          decision rule instead: each step in the sequence offers a positive,
+          paraphrasable correspondence ("X is like a rung below Y"), rather than
+          a self-cancelling formulation, which is the defining test for A. This
+          is recorded as a tagging-history note, not a translation flag: no
+          sub-category has been created for this ladder-like pattern, and none
+          is planned. The instance is simply noted here, alongside its companion
+          at Katha 3.10–11, as material for possible future research rather than
+          as a formal addition to the ontology.</p>
+        </note>
+
+      </div>
+
+    </back>
+  </text>
+</TEI>
