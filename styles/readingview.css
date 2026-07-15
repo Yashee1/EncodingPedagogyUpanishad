@@ -1,0 +1,108 @@
+div[type="text"] {
+  display: block;
+  margin-top: 2em;
+}
+div[type="text"]::before {
+  content: attr(n);
+  display: block;
+  font-size: 20pt;
+  font-weight: bold;
+  border-bottom: 2px solid #999999;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+/* --- Section headings: "Khanda 1", "Valli 2" --- */
+div[type="khanda"] {
+  display: block;
+  margin-top: 1.5em;
+}
+div[type="khanda"]::before {
+  content: "Khanda " attr(n);
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #444444;
+  margin-bottom: 8px;
+}
+
+div[type="valli"] {
+  display: block;
+  margin-top: 1.5em;
+}
+div[type="valli"]::before {
+  content: "Valli " attr(n);
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #444444;
+  margin-bottom: 8px;
+}
+
+/* --- Verse number before the verse, small and raised --- */
+lg[type="verse"] {
+  display: block;
+  margin-bottom: 10px;
+}
+lg[type="verse"]::before {
+  content: attr(n);
+  display: inline;
+  vertical-align: super;
+  font-size: 8pt;
+  color: #777777;
+  margin-right: 6px;
+}
+
+/* --- Category badge after a tagged verse: just the letter, in a circle --- */
+lg[type="verse"][ana]::after {
+  content: oxy_xpath('substring-after(@ana, "#cat-")', 'string');
+  display: oxy_label;
+  color: white;
+  background-color: #534AB7;
+  border-radius: 50%;
+  padding: 1px 6px;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+/* --- Footnote markers: show the note's own number, not a link icon --- */
+ptr[type="note"] {
+  display: inline;
+}
+ptr[type="note"]::before {
+  content: oxy_xpath('id(substring(@target,2))/@n', 'string');
+  display: oxy_label;
+  vertical-align: super;
+  font-size: 8pt;
+  color: #A85C32;
+  font-weight: bold;
+}
+
+/* --- Glossary: real list, letter + name + definition --- */
+interpGrp {
+  display: block;
+  margin: 1em 0;
+}
+interp {
+  display: list-item;
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  padding-left: 0;
+}
+interp::before {
+  content: attr(n) " — ";
+  font-weight: bold;
+  color: #534AB7;
+}
+
+/* --- Footnotes list: numbered, not paragraph-run-together --- */
+div[type="footnotes"] note {
+  display: block;
+  margin-bottom: 10px;
+}
+div[type="footnotes"] note::before {
+  content: attr(n) ". ";
+  font-weight: bold;
+  color: #A85C32;
+}
